@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">Main page <span class="sr-only">(current)</span></a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li class="active"><a href="#">Registration</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">User <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">My profile</a></li>            
+            <li role="separator" class="divider"></li>
+            <li><a href="#">log out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse --> 
+  </div><!-- /.container-fluid -->
+</nav>
+ 
+<div class="container-fluid">
+  
+  <button id="open">Open Window</button>
+  
+  <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <br><br>
+    <div class="head">
+     <div class="progress">
+     <div id="status" class="progress-bar progress-bar-striped active" role="progressbar"  aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%">
+      50%
+     </div>
+     </div>
+   </div>
+   <div id="one">
+     <div class="input-group">
+     <span class="input-group-addon" aria-hidden="true"><i class="fa fa-user" aria-hidden="true"></i></span>
+     <input type="text" class="form-control" placeholder="name" aria-describedby="basic-addon1">
+     </div>
+     <br>
+     <div class="input-group">
+     <span class="input-group-addon" aria-hidden="true"><i class="fa fa-user" aria-hidden="true"></i></span>
+     <input type="text" class="form-control" id="surname" placeholder="surname">
+     </div><br>
+     <button type="submit" class="btn btn-primary" id="next">NEXT</button>
+   </div>
+   <div id="two">
+      <div class="input-group">
+      <span class="input-group-addon" aria-hidden="true"><i class="fa fa-envelope-open" aria-hidden="true"></i></span>
+      <input type="email" class="form-control" id="email">
+      </div>
+
+      <br>
+      <div class="input-group">
+      <span class="input-group-addon" aria-hidden="true"><i class="fa fa-lock" aria-hidden="true"></i></span>
+      <input type="password" class="form-control" id="pwd">
+      </div><br>
+      <button type="submit" class="btn btn-primary" id="prev">PREV</button>
+      <button type="submit" class="btn btn-default" id="sub">Submit</button>
+   </div>  
+    <div class="alert alert-success" role="alert" id="end">Well done!</div>
+  </div>
+ 
+</div>
+  
+</div>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
